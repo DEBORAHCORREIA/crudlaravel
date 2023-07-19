@@ -78,8 +78,7 @@ class ProdutoController extends Controller
                     'precoUnitario' => 'required',
                     'precoVenda' => 'required',
                 ]);
-                    $produto->update($request->all());
-        
+                    $produto->update($request->all());        
             return redirect()->route('produtos.index')
     
                             ->with('success','Produto atualizado com sucesso.');
