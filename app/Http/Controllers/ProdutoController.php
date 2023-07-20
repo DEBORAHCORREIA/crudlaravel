@@ -66,6 +66,8 @@ class ProdutoController extends Controller
             'precoVenda' => 'required',
         ]);
         $produto->update($request->all());
+
+        //comando não identificado
         return redirect()->route('produtos.index')
                         ->with('success','Produto atualizado com sucesso.');
     }
